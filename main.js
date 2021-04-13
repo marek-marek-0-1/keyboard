@@ -15,7 +15,7 @@ let mines = document.querySelector('.idk');
 let symbol1 = document.querySelector('.symbol1');
 let equal = document.querySelector('.equal');
 let space = document.querySelector('.space');
-let tab = document.querySelector('.tab'); //dindt make it :(
+let tab = document.querySelector('.tab');
 let q = document.querySelector('.q');
 let w = document.querySelector('.w');
 let e = document.querySelector('.e');
@@ -81,10 +81,6 @@ window.addEventListener('keydown', function (event) {
             sel.style.color = 'white';
             return allTheText.insertAdjacentHTML('beforeend', `<span>${lowLetter}</span>`);
         }
-        // if (event.keyCode === 8) {
-        //     let lol = allTheText.lastElementChild;
-        //     console.log(lol);
-        // } we will think about u later
     }
 
     if (event.keyCode === 67) {
@@ -127,7 +123,7 @@ window.addEventListener('keydown', function (event) {
         sel.style.backgroundColor = 'gray';
         sel.style.color = 'white';
         allTheText.insertAdjacentHTML('beforeend', `<span>${symbol}</span>`);
-        // return allTheText.append(symbol);
+
     }
     if (event.keyCode === 8) {
         let elem = allTheText.children;
@@ -283,17 +279,10 @@ window.addEventListener('keydown', function (event) {
         let dots = '....';
         allTheText.insertAdjacentHTML('beforeend', `<span class="dots" style="color: white";>${dots}</span>`);
     }
-
-    // console.log(event);
-    // console.log(allTheText.innerText);
-    // console.log(i);
     if (i == 114) {
         allTheText.insertAdjacentHTML('beforeend', '<br>');
         i = 0;
     }
-    // let lol4 = allTheText.textContent;
-    // let back = lol4[lol4.length - 1];
-    // console.log(back)
 })
 
 
@@ -305,6 +294,3 @@ function white(key, sel) {
         }
     })
 }
-
-// let mines = document.querySelector('.idk');
-// console.log(mines);
